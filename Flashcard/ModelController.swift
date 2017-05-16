@@ -26,8 +26,10 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     override init() {
         super.init()
         // Create the data model.
-        let dateFormatter = DateFormatter()
-        pageData = dateFormatter.monthSymbols
+        //pageData = dateFormatter.monthSymbols
+        pageData.insert("Create", at: 0)
+        pageData.insert("Cards", at: 1)
+        pageData.insert("Study", at: 2)
     }
 
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {
@@ -37,7 +39,23 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         }
 
         // Create a new view controller and pass suitable data.
-        let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+//        let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+//        dataViewController.dataObject = self.pageData[index]
+//        return dataViewController
+        
+        var dataViewController: DataViewController
+        
+        if (index == 0) {
+            dataViewController = storyboard.instantiateViewController(withIdentifier: "CreateDataViewController") as! CreateDataViewController
+        } else if (index == 1) {
+            dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+        } else if (index == 2) {
+            dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+        } else {
+            //How is it finding more than 2 indexes?
+            dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+        }
+        
         dataViewController.dataObject = self.pageData[index]
         return dataViewController
     }

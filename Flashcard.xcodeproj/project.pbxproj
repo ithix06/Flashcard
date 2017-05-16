@@ -15,6 +15,7 @@
 		7FC679EF1ECAA3B600C5E068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC679EE1ECAA3B600C5E068 /* Assets.xcassets */; };
 		7FC679F21ECAA3B600C5E068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC679F01ECAA3B600C5E068 /* LaunchScreen.storyboard */; };
 		7FC679FD1ECAA3B600C5E068 /* FlashcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC679FC1ECAA3B600C5E068 /* FlashcardTests.swift */; };
+		7FC67A0A1ECAA74D00C5E068 /* CreateDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC67A091ECAA74D00C5E068 /* CreateDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		7FC679F81ECAA3B600C5E068 /* FlashcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC679FC1ECAA3B600C5E068 /* FlashcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardTests.swift; sourceTree = "<group>"; };
 		7FC679FE1ECAA3B600C5E068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FC67A091ECAA74D00C5E068 /* CreateDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				7FC679EE1ECAA3B600C5E068 /* Assets.xcassets */,
 				7FC679F01ECAA3B600C5E068 /* LaunchScreen.storyboard */,
 				7FC679F31ECAA3B600C5E068 /* Info.plist */,
+				7FC67A091ECAA74D00C5E068 /* CreateDataViewController.swift */,
 			);
 			path = Flashcard;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				7FC679E61ECAA3B600C5E068 /* RootViewController.swift in Sources */,
 				7FC679EA1ECAA3B600C5E068 /* ModelController.swift in Sources */,
 				7FC679E81ECAA3B600C5E068 /* DataViewController.swift in Sources */,
+				7FC67A0A1ECAA74D00C5E068 /* CreateDataViewController.swift in Sources */,
 				7FC679E41ECAA3B600C5E068 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
